@@ -9,11 +9,9 @@ app = Flask(__name__)
 
 if not os.getenv("SPOTIFYID"):
     raise RuntimeError("SPOTIFYID is not set")
-    print("spotifyid found")
 
 if not os.getenv("SPOTIFYSECRET"):
     raise RuntimeError("SPOTIFYSECRET is not set")
-    print("spotifysecret found")
 
 client_id = os.getenv("SPOTIFYID")
 client_secret = os.getenv("SPOTIFYSECRET")

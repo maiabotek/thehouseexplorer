@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> House Music Explorer </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    <h1>THE HOUSE MUSIC EXPLORER 🪩 </h1>
+
+      <div class="container2">
+
+          <p> Haven't listened to house music before? </p>
+
+          <p> There's something for everyone! </p>
+
+          <p> Put on your dancing shoes and click a genre to explore songs-- one is bound to end up on your playlist. </p>
+
+      </div>
+
+        <div class="container4">
+
+            {% for genre in genres %}
+
+            <a href="/genre/{{ genre }}/" class="buttonlink"> <button type="button" class="button" role="button"> {{ genre }} </button> </a>
+
+            {% endfor %}
+
+        </div>
+
+      </div>
+
+  <footer>
+
+    <p> This page was created as a final project for the University of Florida by Maia Botek. <a href="https://github.com"> GitHub Repo. </a> </p>
+
+  </footer>
+
+</body>
+
+</html>

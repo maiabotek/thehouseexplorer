@@ -1,0 +1,114 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4F8AE3;
+    font-family: 'DM Sans','Arial', sans-serif;
+    color: #FFF;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #333;
+}
+
+p {
+  max-width: 600px;
+  font-size: 100%
+}
+
+footer {
+  max-width: 600px;
+  font-size: 70%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.container2 {
+    font-size: 110%;
+    margin-bottom: 2rem;
+}
+
+.container3 {
+  background: #E8E8E8;
+  color: #333;
+  border-radius: 25px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.buttonlink {
+  text-decoration: none;
+}
+
+/* CSS  copied from https://getcssscan.com/css-buttons-examples Button 22*/
+.button {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "DM Sans",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: .25rem 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  background-color: #006AE8;
+}
+
+.button:hover {
+  background-image: url("/static/discolights.png");
+  background-size: cover;
+}
+
+#audioplayer {
+  max-width: 90%;
+  border-radius:12px
+}
+
+#indexheader {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width:450px){
+
+    body {
+        font-size: 150%;
+    }
+
+    #genrelist {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+}
